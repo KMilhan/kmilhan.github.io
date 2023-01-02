@@ -1,12 +1,13 @@
 import Link from 'next/link'
+import NavLink from 'next/link'
 
 const Index = () => {
   return (
     <>
       <div>Welcome to Next.js!</div>
-      <Link href="/linkSample">
+      <NavLink href="/linkSample">
         <a>link Sample Page</a>
-      </Link>
+      </NavLink>
     </>
   )
 }
