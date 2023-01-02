@@ -5,8 +5,9 @@ const Index = () => {
   return (
     <>
       <div>Welcome to Next.js!</div>
+        <a href="https://github.com"> To GitHub </a>
       <NavLink href="/linkSample">
-        <a>link Sample Page</a>
+          link Sample Page
       </NavLink>
     </>
   )
