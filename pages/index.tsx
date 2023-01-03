@@ -24,7 +24,11 @@ export default function BasicGrid() {
         <Grid item xs={12}>
           <Container maxWidth="sm">
             <NavLink href="./linkSample">
-              <Button fullWidth style={{margin: "50px auto auto auto"}} variant="contained">Add New </Button>
+              <Button fullWidth style={{margin: "50px auto auto auto"}} variant="contained">Go to test</Button>
+            </NavLink>
+            <NavLink href="./Album">
+              <Button fullWidth style={{margin: "50px auto auto auto"}} variant="contained">Go to astrophotoraphy
+                album</Button>
             </NavLink>
           </Container>
         </Grid>
