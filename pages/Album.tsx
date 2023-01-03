@@ -101,7 +101,7 @@ export default function Album() {
                     sx={{
                       pt: '10%',
                     }}
-                    image={photo.file}
+                    image={"thumb/" + photo.file}
                     alt={photo.code}
                   />
                   <CardContent sx={{flexGrow: 1}}>
