@@ -84,7 +84,7 @@ export default function Album() {
               <NavLink href="/">
                 <Button variant="contained">Go back to the main page</Button>
               </NavLink>
-              <Button variant="outlined">Secondary action</Button>
+              {/*<Button variant="outlined">Secondary action</Button>*/}
             </Stack>
           </Container>
         </Box>
@@ -119,8 +119,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small"><NavLink href={photo.file}>View</NavLink></Button>
-                    <Button size="small">Edit</Button>
+                    <Button size="small"><NavLink href={photo.file}>View large</NavLink></Button>
                   </CardActions>
                 </Card>
               </Grid>
