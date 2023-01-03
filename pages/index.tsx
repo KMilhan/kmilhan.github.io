@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import NavLink from "next/link"
+import Typography from "@mui/material/Typography";
 
 const Item = styled(Paper)(({theme}) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -17,14 +18,37 @@ const Item = styled(Paper)(({theme}) => ({
 
 export default function BasicGrid() {
   return (
-    <Box sx={{flexGrow: 1}}>
+    <Box sx={{flexGrow: 1, pt: 8}}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Container maxWidth="sm">
-            <NavLink href="./milhan">
+            <Typography
+              component="h1"
+              variant="h2"
+              align="center"
+              color="text.primary"
+              gutterBottom
+            >
+              Welcome to Milhan Kim&apos;s personal website
+            </Typography>
+            <Typography variant="h5" align="center" color="text.secondary" component="p">
+              Hi, this is Milhan Kim, an owner of this website. Today, we have two things to offer to you. One is about
+              myself, who am I in my personal life, and who am I as an engineer.
+            </Typography>
+            <div><br/></div>
+            <Typography variant="h5" align="center" color="text.secondary" component="p">
+              Also, I have the astrophotography album for you to see my hobby astrophotography projects. Please enjoy!
+            </Typography>
+            <div><br/></div>
+            <Typography align="center" color="text.secondary" component="p">
+              contact: kimmilhan@gmail.com LinkedIn: <a href="https://milhan.kim/">https://milhan.kim/</a>
+            </Typography>
+          </Container>
+          <Container maxWidth="sm">
+            <NavLink href="./milhan" style={{textDecoration: 'none'}}>
               <Button fullWidth style={{margin: "50px auto auto auto"}} variant="contained">Who&apos;s Milhan</Button>
             </NavLink>
-            <NavLink href="./Album">
+            <NavLink href="./Album" style={{textDecoration: 'none'}}>
               <Button fullWidth style={{margin: "50px auto auto auto"}} variant="contained">Go to astrophotoraphy
                 album</Button>
             </NavLink>

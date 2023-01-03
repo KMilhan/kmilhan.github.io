@@ -73,7 +73,7 @@ export default function Album() {
               When the sky is clear, we look up the sky and take a photo of night sky, especially deep sky objects.
             </Typography>
             <Typography variant="h6" align="center" color="text.secondary" paragraph>
-              These are the ultrasonographies I and my partner have taken over the years
+              These are the best astrophotographies I and my partner have taken over the years
             </Typography>
             <Stack
               sx={{pt: 4}}
@@ -81,7 +81,7 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <NavLink href="/">
+              <NavLink href="/" style={{textDecoration: 'none'}}>
                 <Button variant="contained">Go back to the main page</Button>
               </NavLink>
               {/*<Button variant="outlined">Secondary action</Button>*/}
@@ -119,7 +119,8 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small"><NavLink href={photo.file}>View large</NavLink></Button>
+                    <Button size="small"><NavLink href={photo.file} style={{textDecoration: 'none'}}>View
+                      large</NavLink></Button>
                   </CardActions>
                 </Card>
               </Grid>

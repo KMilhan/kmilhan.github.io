@@ -147,7 +147,7 @@ export default function someName() {
               aria-labelledby="nested-list-subheader"
               subheader={
                 <ListSubheader component="div" id="nested-list-subheader">
-                  On his free time,
+                  Senior Software Engineer
                 </ListSubheader>
               }
             >
@@ -155,27 +155,28 @@ export default function someName() {
                 <ListItemIcon>
                   <AdjustIcon/>
                 </ListItemIcon>
-                <ListItemText primary="Software engineer, specialized in developing tools for software engineers"/>
+                <ListItemText
+                  primary="Senior Software Engineer, specialized in developing tools for software engineers"/>
               </ListItemButton>
               <ListItemButton>
                 <ListItemIcon>
                   <AdjustIcon/>
                 </ListItemIcon>
                 <ListItemText
-                  primary="Master's degree in Software Engineering. Thesis on reducing the complexity of heterogeneously distributed computing system"/>
+                  primary="Master's degree in computer science. Thesis on reducing the complexity of heterogeneously distributed computing system"/>
               </ListItemButton>
               <ListItemButton>
                 <ListItemIcon>
                   <AdjustIcon/>
                 </ListItemIcon>
                 <ListItemText
-                  primary="Experience in manufacturing, e-commerce, internet messaging, and automotive industry"/>
+                  primary="Experienced in manufacturing, e-commerce, internet messaging, and automotive industry"/>
               </ListItemButton>
               <ListItemButton>
                 <ListItemIcon>
                   <AdjustIcon/>
                 </ListItemIcon>
-                <ListItemText primary="Experience in individual contributor, tech lead, and manager"/>
+                <ListItemText primary="Have worked as individual contributor, tech lead, or manager"/>
               </ListItemButton>
               <ListItemButton>
                 <ListItemIcon>
@@ -194,7 +195,7 @@ export default function someName() {
                 </List>
               </Collapse>
             </List>
-            <NavLink href="https://milhan.kim">
+            <NavLink href="https://milhan.kim" style={{textDecoration: 'none'}}>
               <Button fullWidth style={{margin: "50px auto auto auto"}} variant="contained">View full resume at
                 https://milhan.kim/</Button>
             </NavLink>
@@ -205,7 +206,7 @@ export default function someName() {
         <Grid item xs={12}>
           <Container maxWidth="sm">
 
-            <NavLink href="./">
+            <NavLink href="./" style={{textDecoration: 'none'}}>
               <Button fullWidth style={{margin: "50px auto auto auto"}} variant="contained">Go to home</Button>
             </NavLink>
           </Container>
