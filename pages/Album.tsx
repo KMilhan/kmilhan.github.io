@@ -35,13 +35,13 @@ function createPhoto(
 }
 
 const photos = [
-  createPhoto('./NGC2244-rosette-nebula3.png', "NGC-2244", "Rosette Nebula", "The nebula looks like a rose, thus it's called the rosette nebula", "2023-01-02"),
-  createPhoto('./ngc1499-california_nebula-2022-12-24_2.png', "NGC-1499", "California Nebula", "The nebula looks like the california, thus it's called the california nebula", "2022-12-24"),
-  createPhoto('./NGC896_heart_nebula_2023-01-02.png', "NGC-896", "Heart Nebula", "Yes you can see, it's heart!", "2023-01-02"),
-  createPhoto('./ngc2264-christmas_tree_cluster-2022-12-24.png', "NGC-2264", "Christmas tree cluster, or cone nebula", "One of the hardest target to capture. But you can check the cone-shaped nebula and (part of) christmas tree form", "2022-12-24"),
-  createPhoto('./m42-orion-2022-11-27.png', "M42", "The Great Orion Nebula", "One of very few visible nebulae in the night sky, one of the most beautiful deep sky objects. This photo was took in Tokyo, our house veranda", "2022-11-27"),
-  createPhoto('./r_r_p_stacked3 (1).png', "M45", "Pleiades star cluster", "Also called seven sisters, One of very few visible nebulae in the night sky. Look at the beautiful blue gases", "2022-10-03"),
-  createPhoto('./r_r_f_stacked2 (1).png', "IC434, NGC-2024", "Horsehead nebula and Flame nebula", "One of the most famous deep sky object for the audiences, thanks to the hubble image. THe image contains at least three nebulae, horse head, flame, and reflection nebular ngc 2023", "2022-10-03"),
+  createPhoto('./NGC2244-rosette-nebula3.png', "NGC-2244", "Rosette Nebula", "The nebula looks like a rose, so it's called the rosette nebula", "2023-01-02"),
+  createPhoto('./ngc1499-california_nebula-2022-12-24_2.png', "NGC-1499", "California Nebula", "The nebula looks like the state of California. Only a part of the massive deep sky object is presented here.", "2022-12-24"),
+  createPhoto('./NGC896_heart_nebula_2023-01-02.png', "NGC-896", "Heart Nebula", "Heart!!", "2023-01-02"),
+  createPhoto('./ngc2264-christmas_tree_cluster-2022-12-24.png', "NGC-2264", "Christmas tree cluster, or cone nebula", "One of the hardest target to capture so far. But you can check the cone-shaped nebula and (part of) christmas tree form", "2022-12-24"),
+  createPhoto('./m42-orion-2022-11-27.png', "M42", "The Great Orion Nebula", "One of very few visible nebulae in the night sky, and one of the most beautiful deep sky objects. This photo was took in Tokyo, our house veranda", "2022-11-27"),
+  createPhoto('./r_r_p_stacked3 (1).png', "M45", "Pleiades star cluster", "Also called seven sisters, One of very few visible nebulae in the night sky with bare eyes. Look at the beautiful blue gases", "2022-10-03"),
+  createPhoto('./r_r_f_stacked2 (1).png', "IC434, NGC-2024", "Horsehead nebula and Flame nebula", "One of the most famous deep sky object for the audiences, thanks to the hubble image. The image contains at least three nebulae, horse head, flame, and reflection nebular NGC-2023 (bright-star-looking object under the horse)", "2022-10-03"),
   createPhoto('./r_a_stacked (1).png', "M31", "Andromeda Galaxy", "The nearest galaxy to our galaxy. Also you can see two more galaxies, M32 (center above) and M110 (below)", "2022-10-03"),
 ];
 
