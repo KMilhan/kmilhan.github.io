@@ -35,6 +35,8 @@ function createPhoto(
 }
 
 const photos = [
+  createPhoto('./M42-orion-2023-01-21.png', "M42, Sh2-279", "The Great Orion Nebula and The Running Man Nebula", "One of very few visible nebulae in the night sky, and one of the most beautiful deep sky objects.", "2023-01-21"),
+  createPhoto('./M1_crab_nebula_2023-01-21.png', "M1", "Crab Nebula", "Supernova remnant and pulsar wind nebula in the constellation of Taurus", "2023-01-21"),
   createPhoto('./NGC2244-rosette-nebula3.png', "NGC-2244", "Rosette Nebula", "The nebula looks like a rose, so it's called the rosette nebula", "2023-01-02"),
   createPhoto('./ngc1499-california_nebula-2022-12-24_2.png', "NGC-1499", "California Nebula", "The nebula looks like the state of California. Only a part of the massive deep sky object is presented here.", "2022-12-24"),
   createPhoto('./NGC896_heart_nebula_2023-01-02.png', "NGC-896", "Heart Nebula", "Heart!!", "2023-01-02"),
