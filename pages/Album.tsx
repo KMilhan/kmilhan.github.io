@@ -35,6 +35,7 @@ function createPhoto(
 }
 
 const photos = [
+  createPhoto('./m51_stacked_c8_3.png', "M51", "Whirlpool Galaxy", "Interacting grand-design spiral galaxy with a Seyfert 2 active galactic nucleus", "2023-04-28"),
   createPhoto('./m51.png', "M51", "Whirlpool Galaxy", "Interacting grand-design spiral galaxy with a Seyfert 2 active galactic nucleus", "2023-04-09"),
   createPhoto('./M42-orion-2023-01-21.png', "M42, Sh2-279", "The Great Orion Nebula and The Running Man Nebula", "One of very few visible nebulae in the night sky, and one of the most beautiful deep sky objects.", "2023-01-21"),
   createPhoto('./M1_crab_nebula_2023-01-21.png', "M1", "Crab Nebula", "Supernova remnant and pulsar wind nebula in the constellation of Taurus", "2023-01-21"),
