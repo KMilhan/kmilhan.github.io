@@ -35,7 +35,8 @@ function createPhoto(
 }
 
 const photos = [
-  createPhoto('./m51_edge.png', "M51", "Whirlpool Galaxy", "Interacting grand-design spiral galaxy with a Seyfert 2 active galactic nucleus", "2023-04-28"),
+  createPhoto('./m42_pixinsight.png', "M42, Sh2-279", "The Great Orion Nebula and The Running Man Nebula", "One of very few visible nebulae in the night sky, and one of the most beautiful deep sky objects.", "2023-01-21"),
+  createPhoto('./m51_edge.png', "M51", "Whirlpool Galaxy", "Interacting grand-design spiral galaxy with a Seyfert 2 active galactic nucleus", "2023-05-17"),
   createPhoto('./IMG_2027.jpg', "Vega", "α Lyr", "Vega is the brightest star in the northern constellation of Lyra", "2023-05-02"),
   createPhoto('./m51_stacked_c8_3.png', "M51", "Whirlpool Galaxy", "Interacting grand-design spiral galaxy with a Seyfert 2 active galactic nucleus", "2023-04-28"),
   createPhoto('./m51.png', "M51", "Whirlpool Galaxy", "Interacting grand-design spiral galaxy with a Seyfert 2 active galactic nucleus", "2023-04-09"),
