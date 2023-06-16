@@ -75,13 +75,13 @@ export default function Album() {
               color="text.primary"
               gutterBottom
             >
-              Astrophotography Album
+              Gallery of Astrophotography
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              When the sky is clear, we look up the sky and take a photo of night sky, especially deep sky objects.
+              Whenever the sky is clear, we gaze upwards and capture images of the night sky, focusing particularly on deep sky objects.
             </Typography>
             <Typography variant="h6" align="center" color="text.secondary" paragraph>
-              These are the best astrophotographies I and my partner have taken over the years
+              These are some of the finest astrophotography images that my partner and I have captured over the years.
             </Typography>
             <Stack
               sx={{pt: 4}}
@@ -147,7 +147,7 @@ export default function Album() {
           color="text.secondary"
           component="p"
         >
-          All deep sky object references are tagged in the best-effort fashion. Please let me know if some are wrong.
+          References to all celestial deep sky objects are labeled as accurately as possible. If you find any inaccuracies, do not hesitate to inform me.
         </Typography>
         <Copyright/>
       </Box>

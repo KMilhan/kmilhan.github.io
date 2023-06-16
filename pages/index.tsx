@@ -32,11 +32,11 @@ export default function BasicGrid() {
               Welcome to Milhan Kim&apos;s personal website
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" component="p">
-              Hi, this is Milhan Kim, an owner of this website. Click the button below to get to know about myself.
+              Hello, I&apos;m Milhan Kim, the creator of this website. Feel free to click on the button below to learn more about me.
             </Typography>
             <div><br/></div>
             <Typography variant="h5" align="center" color="text.secondary" component="p">
-              Also, I have an album for you to show my hobby astrophotography projects. Please enjoy!
+              Additionally, I have a collection of my astrophotography projects that I&apos;d like to share with you. I hope you enjoy browsing through it!
             </Typography>
             <div><br/></div>
             <Typography align="center" color="text.secondary" component="p">
