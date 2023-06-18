@@ -113,6 +113,10 @@ export default function Album() {
                     image={"thumb/" + photo.file}
                     alt={photo.code}
                   />
+                  <CardActions>
+                    <Button size="large"><NavLink href={photo.file} style={{textDecoration: 'none'}}>View
+                      large</NavLink></Button>
+                  </CardActions>
                   <CardContent sx={{flexGrow: 1}}>
                     <Typography gutterBottom variant="h4" component="h2">
                       {photo.code}
@@ -127,10 +131,6 @@ export default function Album() {
                       {photo.explanation}
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small"><NavLink href={photo.file} style={{textDecoration: 'none'}}>View
-                      large</NavLink></Button>
-                  </CardActions>
                 </Card>
               </Grid>
             ))}
