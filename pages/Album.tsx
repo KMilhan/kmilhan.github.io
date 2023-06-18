@@ -35,7 +35,8 @@ function createPhoto(
 }
 
 const photos = [
-  createPhoto('./ngc2244.jpg', "NGC-2244", "Rosette Nebula", "The nebula looks like a rose, so it's called the rosette nebula", "2023-01-02"),
+  createPhoto('./m16.png', "M16", "Eagle Nebula, Pillars of Creation", "The Eagle Nebula (catalogued as Messier 16 or M16, and as NGC 6611, and also known as the Star Queen Nebula) is a young open cluster of stars in the constellation Serpens, discovered by Jean-Philippe de Cheseaux in 1745–46. Both the \"Eagle\" and the \"Star Queen\" refer to visual impressions of the dark silhouette near the center of the nebula, an area made famous as the \"Pillars of Creation\" imaged by the Hubble Space Telescope. Pillars of Creation is a photograph taken by the Hubble Space Telescope of elephant trunks of interstellar gas and dust in the Eagle Nebula, in the Serpens constellation, some 6,500–7,000 light-years (2,000–2,100 pc; 61–66 Em) from Earth.", "2023-01-02"),
+  createPhoto('./ngc2244.jpg', "NGC-2244", "Rosette Nebula", "The Rosette Nebula (also known as Caldwell 49) is an H II region located near one end of a giant molecular cloud in the Monoceros region of the Milky Way Galaxy. The open cluster NGC 2244 (Caldwell 50) is closely associated with the nebulosity, the stars of the cluster having been formed from the nebula's matter.", "2023-01-02"),
   createPhoto('./m42_pixinsight.png', "M42, Sh2-279", "The Great Orion Nebula and The Running Man Nebula", "One of very few visible nebulae in the night sky, and one of the most beautiful deep sky objects.", "2023-01-21"),
   createPhoto('./m51_edge.png', "M51", "Whirlpool Galaxy", "Interacting grand-design spiral galaxy with a Seyfert 2 active galactic nucleus", "2023-05-17"),
   createPhoto('./IMG_2027.jpg', "Vega", "α Lyr", "Vega is the brightest star in the northern constellation of Lyra", "2023-05-02"),
@@ -45,7 +46,7 @@ const photos = [
   createPhoto('./M1_crab_nebula_2023-01-21.png', "M1", "Crab Nebula", "Supernova remnant and pulsar wind nebula in the constellation of Taurus", "2023-01-21"),
   createPhoto('./NGC2244-rosette-nebula3.png', "NGC-2244", "Rosette Nebula", "The nebula looks like a rose, so it's called the rosette nebula", "2023-01-02"),
   createPhoto('./ngc1499-california_nebula-2022-12-24_2.png', "NGC-1499", "California Nebula", "The nebula looks like the state of California. Only a part of the massive deep sky object is presented here.", "2022-12-24"),
-  createPhoto('./NGC896_heart_nebula_2023-01-02.png', "NGC-896", "Heart Nebula", "Heart!!", "2023-01-02"),
+  createPhoto('./NGC896_heart_nebula_2023-01-02.png', "NGC-896", "Heart Nebula", "It displays glowing ionized hydrogen gas and darker dust lanes.", "2023-01-02"),
   createPhoto('./ngc2264-christmas_tree_cluster-2022-12-24.png', "NGC-2264", "Christmas tree cluster, or cone nebula", "One of the hardest target to capture so far. But you can check the cone-shaped nebula and (part of) christmas tree form", "2022-12-24"),
   createPhoto('./m42-orion-2022-11-27.png', "M42", "The Great Orion Nebula", "One of very few visible nebulae in the night sky, and one of the most beautiful deep sky objects. This photo was took in Tokyo, our house veranda", "2022-11-27"),
   createPhoto('./r_r_p_stacked3 (1).png', "M45", "Pleiades star cluster", "Also called seven sisters, One of very few visible nebulae in the night sky with bare eyes. Look at the beautiful blue gases", "2022-10-03"),
