@@ -35,6 +35,12 @@ function createPhoto(
 }
 
 const photos = [
+  createPhoto('./IC1805_edited.jpg', "IC1805", "Heart Nebula", "An emission nebula, 7500 light years away from Earth and located in the Perseus Arm of the Galaxy in the constellation Cassiopeia.", "2024-02-17"),
+  createPhoto('./M82_edited.jpg', "M82", "Cigar Galaxy, Starburst Galaxy", "A starburst galaxy approximately 12 million light-years away in the constellation Ursa Major. It is the second-largest member of the M81 Group", "2024-02-17"),
+  createPhoto('./ic1848-2024.jpg', "IC1848", "Soul Nebula", "An emission nebula located in Cassiopeia. Several small open clusters are embedded in the nebula", "2024-02-17"),
+  createPhoto('./MergeMosaic_NGC2237.jpg', "NGC2237", "Rosette Nebula", "A giant molecular cloud in the Monoceros region of the Milky Way Galaxy.", "2024-01-05"),
+  createPhoto('./m81.png', "M81", "Bode's Galaxy", "A grand design spiral galaxy about 12 million light-years away in the constellation Ursa Major.", "2023-12-26"),
+  createPhoto('./m1-2024.png', "M1", "Crab Nebula", "Supernova remnant and pulsar wind nebula in the constellation of Taurus", "2023-12-26"),
   createPhoto('./m42-2023-11-04.jpg', "M42", "The Great Orion Nebula", "The Orion Nebula (also known as Messier 42, M42, or NGC 1976) is a diffuse nebula situated in the Milky Way, being south of Orion's Belt in the constellation of Orion, and is known as the middle \"star\" in the \"sword\" of Orion. It is one of the brightest nebulae and is visible to the naked eye in the night sky with apparent magnitude 4.0. It is 1,344 ± 20 light-years (412.1 ± 6.1 pc) away and is the closest region of massive star formation to Earth.", "2023-11-04"),
   createPhoto('./ngc891.jpg', "NGC891", "NGC891 looks as the Milky Way", "NGC 891 (also known as Caldwell 23, the Silver Sliver Galaxy, and the Outer Limits Galaxy) is an edge-on unbarred spiral galaxy about 30 million light-years away in the constellation Andromeda.", "2023-11-04"),
   createPhoto('./m33.jpg', "M33", "The Triangulum Galaxy", "The Triangulum Galaxy is a spiral galaxy 2.73 million light-years (ly) from Earth in the constellation Triangulum.", "2023-11-04"),
