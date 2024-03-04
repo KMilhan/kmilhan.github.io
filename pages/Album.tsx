@@ -35,6 +35,7 @@ function createPhoto(
 }
 
 const photos = [
+  createPhoto('./m51_edited.jpg', "M51", "Whirlpool Galaxy", "Interacting grand-design spiral galaxy with a Seyfert 2 active galactic nucleus", "2024-03-04"),
   createPhoto('./IC1805_edited.jpg', "IC1805", "Heart Nebula", "An emission nebula, 7500 light years away from Earth and located in the Perseus Arm of the Galaxy in the constellation Cassiopeia.", "2024-02-17"),
   createPhoto('./M82_edited.jpg', "M82", "Cigar Galaxy, Starburst Galaxy", "A starburst galaxy approximately 12 million light-years away in the constellation Ursa Major. It is the second-largest member of the M81 Group", "2024-02-17"),
   createPhoto('./ic1848-2024.jpg', "IC1848", "Soul Nebula", "An emission nebula located in Cassiopeia. Several small open clusters are embedded in the nebula", "2024-02-17"),
