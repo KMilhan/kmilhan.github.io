@@ -1,0 +1,83 @@
+:root {
+  color-scheme: light dark;
+  --bg: #0d1017;
+  --panel: #111827;
+  --accent: #8b5cf6;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #1f2937;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.08), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(34, 211, 238, 0.1), transparent 40%),
+    var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+}
+
+.layout {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  margin: 0;
+}
+
+.header p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.section-title {
+  margin: 0 0 1rem 0;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 2.5rem;
+  color: var(--muted);
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover,
+.card a:hover {
+  color: var(--accent);
+}

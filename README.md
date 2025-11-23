@@ -1,17 +1,20 @@
-# Milhan's personal website
+# Milhan's landing hub
 
-## How to run dev server
+This repo hosts a small Astro + MDX landing page that points visitors to both public sites: [milhan.kim](https://milhan.kim) and [milhan.lol](https://milhan.lol). Each card links to its GitHub source so people can follow changes or fork the code.
+
+## Local development
+
 ```bash
-$ pnpm run dev
+pnpm install
+pnpm dev
 ```
 
-## How to build deployable artifact
+The dev server starts on `http://localhost:4321` by default.
+
+## Build for GitHub Pages
+
 ```bash
-$ pnpm run updoc
+pnpm build
 ```
 
-## How to update website
-* Update thumbnails with `./thumb_gen.sh`
-* Update `docs` directory with `updoc`
-* Add all `docs` dir contents
-* Push to the `master`
+The static output is emitted to the `docs/` directory so it can be published directly via GitHub Pages.

@@ -1,0 +1,44 @@
+---
+layout: ../layouts/BaseLayout.astro
+title: Milhan Kim
+---
+
+import SiteCard from '../components/SiteCard.astro';
+
+<div className="header">
+  <h1>Milhan keeps two friendly front doors.</h1>
+  <p>
+    Welcome! Both <strong>milhan.kim</strong> and <strong>milhan.lol</strong> are live, intentional
+    destinations for the same person. Choose the vibe you like, or explore the repos to see how each
+    site is put together.
+  </p>
+</div>
+
+<p className="section-title">Live destinations</p>
+<div className="cards">
+  <SiteCard
+    title="milhan.kim"
+    domain="milhan.kim"
+    repo="KMilhan/milhan-kim-page"
+    summary="A polished hub focused on professional highlights and a clean reading experience."
+  />
+  <SiteCard
+    title="milhan.lol"
+    domain="milhan.lol"
+    repo="KMilhan/lol-page"
+    summary="A playful mirror that keeps the same owner but leans into lighter, quirkier energy."
+  />
+</div>
+
+<p className="section-title">Why two?</p>
+
+- Different moods, same author. Pick the look and tone that matches your visit.
+- Both sites stay in sync through their dedicated repositories for full transparency.
+- You can fork, star, or open issues on either project to follow changes as they happen.
+
+<p className="section-title">Working on the code</p>
+
+- Primary repos: [KMilhan/milhan-kim-page](https://github.com/KMilhan/milhan-kim-page) and
+  [KMilhan/lol-page](https://github.com/KMilhan/lol-page).
+- This landing page now runs on **Astro + MDX** for faster builds and easy content updates.
+- The static output lives in the `docs/` folder, ready for GitHub Pages.
