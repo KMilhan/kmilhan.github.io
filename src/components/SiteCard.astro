@@ -1,0 +1,132 @@
+---
+export interface Props {
+  title: string;
+  href: string;
+  subtitle?: string;
+  repo?: string;
+  audience?: string;
+  note?: string;
+}
+
+const { title, href, subtitle, repo, audience, note } = Astro.props;
+---
+<article class="card">
+  <div class="card__header">
+    <div>
+      <h3>{title}</h3>
+      {subtitle && <p class="subtitle">{subtitle}</p>}
+    </div>
+    <a class="pill" href={href} rel="noreferrer" target="_blank">
+      <span>Open</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M7 17L17 7M10 7h7v7"
+          fill="none"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+  </div>
+  {audience && (
+    <p class="audience">
+      <strong>Audience:</strong> {audience}
+    </p>
+  )}
+  {note && <p class="note">{note}</p>}
+  <div class="meta">
+    <a href={href} rel="noreferrer" target="_blank">{href}</a>
+    {repo && (
+      <>
+        <span aria-hidden="true">•</span>
+        <a href={repo} rel="noreferrer" target="_blank">Source</a>
+      </>
+    )}
+  </div>
+</article>
+
+<style>
+  .card {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+    border-radius: 18px;
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+  }
+
+  .card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    margin: 0.35rem 0 0;
+    color: var(--muted);
+  }
+
+  .audience {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .note {
+    margin: 0;
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--muted);
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--panel-strong);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    transition: transform 150ms ease, border-color 150ms ease;
+  }
+
+  .pill:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+    border-color: var(--accent);
+  }
+
+  .pill svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (max-width: 640px) {
+    .card__header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .pill {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

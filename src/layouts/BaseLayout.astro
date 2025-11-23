@@ -1,0 +1,165 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Milhan Kim',
+  description = 'Astrophotography, research, and portals to my spaces online.',
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #05080f;
+        --panel: rgba(255, 255, 255, 0.04);
+        --panel-strong: rgba(255, 255, 255, 0.08);
+        --accent: #7ce7f3;
+        --text: #e6edf7;
+        --muted: #9db3d4;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: radial-gradient(circle at 20% 20%, rgba(124, 231, 243, 0.07), transparent 30%),
+          radial-gradient(circle at 80% 10%, rgba(255, 189, 111, 0.06), transparent 22%),
+          radial-gradient(circle at 50% 80%, rgba(124, 143, 243, 0.05), transparent 25%),
+          var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        background: linear-gradient(180deg, rgba(5, 8, 15, 0.9) 0%, rgba(5, 8, 15, 0.6) 100%);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(12px);
+      }
+
+      .shell {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 1.5rem clamp(1rem, 2vw, 2rem);
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      nav .brand {
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+
+      nav .links {
+        display: flex;
+        gap: 1rem;
+        font-weight: 500;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      main {
+        padding: 2.5rem 0 3rem;
+      }
+
+      footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 1.25rem 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--panel);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 0.5rem 0.9rem;
+        border-radius: 999px;
+        color: var(--muted);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.85rem;
+      }
+
+      .pill svg {
+        width: 16px;
+        height: 16px;
+        stroke: var(--accent);
+      }
+
+      .content {
+        display: grid;
+        gap: 2rem;
+      }
+
+      @media (max-width: 640px) {
+        nav .links {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="shell">
+        <nav>
+          <span class="brand">Milhan Kim</span>
+          <div class="links">
+            <a href="#hello">Welcome</a>
+            <a href="#portals">Destinations</a>
+            <a href="#about">Context</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="shell content">
+        <slot />
+      </div>
+    </main>
+    <footer>
+      <div class="shell">
+        Crafted with Astro + MDX to spotlight the twin domains milhan.kim and milhan.lol.
+      </div>
+    </footer>
+  </body>
+</html>

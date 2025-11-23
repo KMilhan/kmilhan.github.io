@@ -1,17 +1,25 @@
 # Milhan's personal website
 
-## How to run dev server
+Static site powered by Astro + MDX. The build targets the `docs` directory for GitHub Pages so both
+**milhan.kim** and **milhan.lol** can share the same publishing workflow.
+
+## Prerequisites
+- Node.js 18+
+- `pnpm` installed globally (or use `npx pnpm`)
+
+## Development
 ```bash
-$ pnpm run dev
+pnpm install
+pnpm dev
 ```
 
-## How to build deployable artifact
+## Build for deployment
 ```bash
-$ pnpm run updoc
+pnpm build
 ```
+The static output is written to `docs/`.
 
-## How to update website
-* Update thumbnails with `./thumb_gen.sh`
-* Update `docs` directory with `updoc`
-* Add all `docs` dir contents
-* Push to the `master`
+## Preview the built site
+```bash
+pnpm preview
+```

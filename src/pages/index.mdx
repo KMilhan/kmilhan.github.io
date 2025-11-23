@@ -1,0 +1,164 @@
+---
+layout: ../layouts/BaseLayout.astro
+title: "Milhan Kim | Astro-powered home"
+description: "A refreshed Astro + MDX landing page linking milhan.kim and milhan.lol."
+---
+import SiteCard from '../components/SiteCard.astro';
+
+<section id="hello" class="panel">
+  <p class="pill">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M12 3l2.09 6.45H21l-5.17 3.76L17.91 20 12 15.97 6.09 20l2.08-6.79L3 9.45h6.91Z"
+        fill="none"
+        stroke-width="1.4"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+      />
+    </svg>
+    <span>Astro + MDX relaunch</span>
+  </p>
+  <h1>Welcome to the heart of Milhan's universe.</h1>
+  <p class="lede">
+    {`The personal site now runs on Astro and MDX for faster loads, easier writing, and a straightforward publishing pipeline. Both milhan.kim and milhan.lol are highlighted here so you can pick the right portal for your visit.`}
+  </p>
+  <div class="highlights">
+    <div>
+      <h3>Why Astro + MDX?</h3>
+      <ul>
+        <li>Content stays close to the writing experience with MDX sections.</li>
+        <li>Static output keeps the site light for both domains.</li>
+        <li>Component-driven cards make the destinations obvious.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>What stays the same?</h3>
+      <ul>
+        <li>Astrophotography focus with direct, no-nonsense writing.</li>
+        <li>Quick access to research, talks, and galleries.</li>
+        <li>Consistent styling that works on desktop and mobile.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="portals" class="panel">
+  <div class="panel__header">
+    <h2>Choose your destination</h2>
+    <p class="muted">Each domain now points to a dedicated experience and repository.</p>
+  </div>
+  <div class="grid">
+    <SiteCard
+      title="milhan.kim"
+      subtitle="Primary home for research, astrophotography, and writing"
+      href="https://milhan.kim"
+      repo="https://github.com/KMilhan/milhan-kim-page"
+      audience="Visitors who want the full story, portfolio, and long-form updates"
+      note="Optimized for deeper reading with MDX-driven posts and space to grow."
+    />
+    <SiteCard
+      title="milhan.lol"
+      subtitle="Playful landing page with quick hits and experiments"
+      href="https://milhan.lol"
+      repo="https://github.com/KMilhan/lol-page"
+      audience="Anyone looking for rapid-fire updates, links, or lighter experiments"
+      note="Keeps things concise while still reflecting the same work and curiosity."
+    />
+  </div>
+</section>
+
+<section id="about" class="panel">
+  <div class="panel__header">
+    <h2>About this refresh</h2>
+    <p class="muted">Built to keep maintenance minimal and storytelling flexible.</p>
+  </div>
+  <div class="stack">
+    <div>
+      <h3>Publishing flow</h3>
+      <p>
+        {`MDX keeps writing approachable while letting components add structure when needed. Astro builds the site into the `}
+        <code>docs</code>
+        {` directory for GitHub Pages, keeping deployment simple for both domains.`}
+      </p>
+    </div>
+    <div>
+      <h3>Future-friendly</h3>
+      <p>
+        {`Sections are organized for growth: new shoots, gallery updates, and announcements can be added as MDX files or Astro components without touching the build system.`}
+      </p>
+    </div>
+  </div>
+</section>
+
+<style is:global>{`
+  h1 {
+    margin: 0.25rem 0 1rem;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    line-height: 1.1;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    margin: 0 0 0.35rem;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .lede {
+    font-size: 1.08rem;
+    color: var(--muted);
+    max-width: 720px;
+  }
+
+  .panel {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 22px;
+    padding: clamp(1.5rem, 4vw, 2rem);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+  }
+
+  .panel__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .highlights {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 1.5rem;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+    margin: 0.35rem 0 0;
+    color: var(--muted);
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 1.5rem;
+  }
+
+  .stack {
+    display: grid;
+    gap: 1rem;
+  }
+`}</style>
