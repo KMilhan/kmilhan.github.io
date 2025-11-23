@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+
+const { title = 'Milhan Kim', description = 'Personal site index for milhan.kim and milhan.lol' } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="layout">
+      <slot />
+      <footer>
+        <span>Two homes, one Milhan.</span>
+        <a href="https://milhan.kim" target="_blank" rel="noreferrer">milhan.kim</a>
+        <span>·</span>
+        <a href="https://milhan.lol" target="_blank" rel="noreferrer">milhan.lol</a>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+---
+export interface Props {
+  title: string;
+  domain: string;
+  repo: string;
+  summary: string;
+  accent?: string;
+}
+
+const { title, domain, repo, summary, accent = 'var(--accent)' } = Astro.props;
+---
+
+<style>
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .chip {
+    background: color-mix(in srgb, var(--panel), var(--accent) 18%);
+    color: var(--chip-color, var(--accent));
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    width: fit-content;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    font-size: 0.9rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .links a {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .summary {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+</style>
+
+<article class="card" style={`--chip-color:${accent}`}>
+  <div class="title">
+    <span class="chip">{title}</span>
+    <p class="summary">{summary}</p>
+  </div>
+  <div class="links">
+    <a href={`https://${domain}`} target="_blank" rel="noreferrer">
+      Visit {domain}
+    </a>
+    <a href={`https://github.com/${repo}`} target="_blank" rel="noreferrer">
+      View {repo}
+    </a>
+  </div>
+</article>
