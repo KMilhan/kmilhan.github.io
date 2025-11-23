@@ -1,0 +1,25 @@
+---
+layout: ../layouts/PageLayout.astro
+title: "Milhan Kim"
+description: "Astro + MDX personal website connecting milhan.kim, milhan.lol, and a deep-sky gallery."
+---
+
+import HeroBanner from '../components/HeroBanner.astro';
+import PromoSites from '../components/PromoSites.astro';
+import AboutMe from '../components/AboutMe.astro';
+import GalleryGrid from '../components/GalleryGrid.astro';
+import {photos} from '../data/photos';
+
+<HeroBanner />
+<PromoSites />
+<AboutMe />
+
+<section id="gallery">
+  <div class="badge">Featured frames</div>
+  <h2>Recent astrophotography</h2>
+  <p>Here are a few favorite captures. Head to the gallery page for the full experience.</p>
+  <GalleryGrid photos={photos.slice(0, 6)} />
+  <div style="margin-top:1rem; display:flex; justify-content:flex-end;">
+    <a class="cta" href="/gallery">See the full gallery</a>
+  </div>
+</section>

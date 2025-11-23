@@ -1,0 +1,27 @@
+---
+import type {Photo} from '@data/photos';
+const {photos} = Astro.props as {photos: Photo[]};
+---
+
+<section id="gallery">
+  <div class="badge">Astrophotography</div>
+  <h2>Celestial highlights</h2>
+  <p>Explore a curated gallery captured on clear nights. Click any thumbnail to open the full-resolution frame.</p>
+  <div class="gallery-grid">
+    {photos.map((photo) => (
+      <article class="gallery-card">
+        <a href={`/${photo.file}`}>
+          <img src={`/thumb/${photo.file}`} alt={`${photo.code} - ${photo.name}`} loading="lazy" />
+        </a>
+        <div class="gallery-card__body">
+          <div class="gallery-card__meta">
+            <strong>{photo.code}</strong>
+            <span>{photo.taken}</span>
+          </div>
+          <h3 style="margin:0">{photo.name}</h3>
+          <p style="margin:0">{photo.description}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

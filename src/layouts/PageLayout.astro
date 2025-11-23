@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+const {title = 'Milhan Kim', description = 'Astro-powered personal space for Milhan Kim'} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+</head>
+<body>
+<header class="nav">
+  <a class="nav__logo" href="/">Milhan Kim</a>
+  <nav class="nav__links" aria-label="Main navigation">
+    <a class="nav__link" href="/">Home</a>
+    <a class="nav__link" href="/gallery">Gallery</a>
+  </nav>
+</header>
+<main>
+  <slot />
+</main>
+<footer class="footer">
+  <p>Building between the stars and the web. Say hello at <a href="mailto:kimmilhan@gmail.com">kimmilhan@gmail.com</a>.</p>
+  <p>Explore more at <a href="https://milhan.kim" target="_blank" rel="noreferrer">milhan.kim</a> and <a href="https://milhan.lol" target="_blank" rel="noreferrer">milhan.lol</a>.</p>
+</footer>
+</body>
+</html>

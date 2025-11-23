@@ -1,0 +1,14 @@
+---
+layout: ../layouts/PageLayout.astro
+title: "Astrophotography Gallery"
+description: "Deep sky captures by Milhan Kim, rendered through an Astro + MDX experience."
+---
+
+import GalleryGrid from '../components/GalleryGrid.astro';
+import {photos} from '../data/photos';
+
+# Astrophotography Gallery
+
+Welcome to the full gallery of deep sky objects. Each frame is linked to a high-resolution version hosted on this site.
+
+<GalleryGrid photos={photos} />

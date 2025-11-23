@@ -1,0 +1,37 @@
+---
+const sites = [
+  {
+    name: 'milhan.kim',
+    url: 'https://milhan.kim',
+    repo: 'https://github.com/KMilhan/milhan-kim-page',
+    summary: 'Full-length resume, professional projects, and the most up-to-date career story.'
+  },
+  {
+    name: 'milhan.lol',
+    url: 'https://milhan.lol',
+    repo: 'https://github.com/KMilhan/lol-page',
+    summary: 'A playful corner on the web for experiments, prototypes, and quick updates.'
+  }
+];
+---
+
+<section>
+  <div class="badge">Two domains, two vibes</div>
+  <h2>Meet the sister sites</h2>
+  <p>
+    This Astro-powered hub now guides you to both destinations. Choose the experience that fits what you are looking for,
+    and feel free to peek into the source repositories.
+  </p>
+  <div class="card-grid">
+    {sites.map((site) => (
+      <article class="card">
+        <h3>{site.name}</h3>
+        <p>{site.summary}</p>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.75rem;">
+          <a class="cta" href={site.url} target="_blank" rel="noreferrer">Visit {site.name}</a>
+          <a class="cta secondary" href={site.repo} target="_blank" rel="noreferrer">View repository</a>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
