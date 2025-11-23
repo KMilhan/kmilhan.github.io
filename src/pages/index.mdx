@@ -1,0 +1,52 @@
+---
+layout: ../layouts/BaseLayout.astro
+title: "Milhan Kim | Two personal homes"
+description: "Navigate between milhan.kim and milhan.lol—one polished, one playful."
+---
+
+import LinkCard from "../components/LinkCard.astro";
+
+<section class="hero">
+  <p style="color: var(--accent); font-weight: 600; letter-spacing: 0.04em; margin: 0;">Hello, I am Milhan.</p>
+  <h1 class="hero-title">A dual-personality personal site.</h1>
+  <p class="hero-subtitle">
+    This page links the two official homes: a refined portfolio at <strong>milhan.kim</strong> and a more playful, experimental corner at
+    <strong> milhan.lol</strong>. Pick your vibe and explore.
+  </p>
+</section>
+
+<div class="grid">
+  <LinkCard
+    title="milhan.kim"
+    href="https://milhan.kim"
+    description="The main personal site—curated astrophotography, professional updates, and ways to get in touch."
+    badge="Polished"
+  />
+  <LinkCard
+    title="milhan.lol"
+    href="https://milhan.lol"
+    description="A lighter playground for experiments, prototypes, and occasional surprises."
+    badge="Playful"
+  />
+</div>
+
+<div class="callout">
+  <strong>Why two addresses?</strong> The same person lives at both. One keeps things tidy for recruiters and collaborators, the other leaves room
+  for spontaneity and side quests.
+</div>
+
+### What to expect
+
+- Long-form notes about photography, optics, and automation.
+- Timelapses, processed stacks, and behind-the-scenes captures.
+- Links back to GitHub when a project ships as code.
+
+### Where to start
+
+1. Visit **milhan.kim** for a guided, story-first walkthrough of recent work.
+2. Hop to **milhan.lol** when you want to peek at prototypes before they are dressed up.
+3. Keep this index bookmarked if you simply need both links at hand.
+
+<div class="footer">
+  Built with Astro + MDX for a simpler, faster home base. Deploys to GitHub Pages straight into this repository's <code>docs</code> output.
+</div>
